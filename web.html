@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Futuristic Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#050510;
+color:white;
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-family:'Orbitron',sans-serif;
+font-size:24px;
+color:#00f7ff;
+text-shadow:0 0 15px #00f7ff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#00f7ff;
+text-shadow:0 0 10px #00f7ff;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(180deg,#050510,#0a0a1f);
+}
+
+.hero h1{
+font-size:60px;
+font-family:'Orbitron',sans-serif;
+color:#00f7ff;
+text-shadow:0 0 30px #00f7ff;
+}
+
+.hero p{
+margin-top:20px;
+font-size:20px;
+color:#aaa;
+}
+
+/* BUTTON */
+
+.btn{
+margin-top:30px;
+padding:12px 30px;
+border:2px solid #00f7ff;
+background:transparent;
+color:#00f7ff;
+cursor:pointer;
+transition:0.4s;
+}
+
+.btn:hover{
+background:#00f7ff;
+color:black;
+box-shadow:0 0 20px #00f7ff;
+}
+
+/* SECTIONS */
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+font-size:40px;
+text-align:center;
+margin-bottom:60px;
+color:#00f7ff;
+font-family:'Orbitron',sans-serif;
+}
+
+/* NEW WORK */
+
+.newwork{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.work-card{
+border:1px solid #00f7ff;
+padding:30px;
+transition:0.4s;
+}
+
+.work-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #00f7ff;
+}
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+}
+
+.skill{
+border:1px solid #00f7ff;
+padding:25px;
+text-align:center;
+transition:0.4s;
+}
+
+.skill:hover{
+box-shadow:0 0 20px #00f7ff;
+}
+
+/* RESUME */
+
+.resume{
+max-width:800px;
+margin:auto;
+text-align:center;
+line-height:1.8;
+}
+
+/* MY WORK */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.project{
+border:1px solid #00f7ff;
+padding:30px;
+transition:0.4s;
+}
+
+.project:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px #00f7ff;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:black;
+color:#888;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">MyPortfolio</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#newwork">New Work</a></li>
+<li><a href="#resume">Virtual Resume</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">My Work</a></li>
+</ul>
+
+</nav>
+
+<section class="hero" id="home">
+
+<h1>S RAMESH</h1>
+
+<p>Futuristic Web Developer</p>
+
+<button class="btn">Explore My Work</button>
+
+</section>
+
+<section id="newwork">
+
+<h2 class="section-title">New Work</h2>
+
+<div class="newwork">
+
+<div class="work-card">
+<h3>AI Portfolio</h3>
+<p>Modern AI styled portfolio website.</p>
+</div>
+
+<div class="work-card">
+<h3>Cyber Landing Page</h3>
+<p>Futuristic landing page UI.</p>
+</div>
+
+<div class="work-card">
+<h3>App Interface</h3>
+<p>Mobile application UI design.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="resume">
+
+<h2 class="section-title">Virtual Resume</h2>
+
+<div class="resume">
+
+<p>I am a passionate developer who loves creating modern futuristic web interfaces. I specialize in HTML, CSS and responsive design.</p>
+
+<p>Experience in UI design, website development and creative digital solutions.</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">UI/UX Design</div>
+<div class="skill">Responsive Design</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">My Work</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Developer Portfolio</h3>
+<p>Personal developer website.</p>
+</div>
+
+<div class="project">
+<h3>Dashboard UI</h3>
+<p>Admin dashboard interface.</p>
+</div>
+
+<div class="project">
+<h3>Startup Landing Page</h3>
+<p>Modern startup website.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Futuristic Portfolio</p>
+
+</footer>
+
+</body>
+
+</html>
